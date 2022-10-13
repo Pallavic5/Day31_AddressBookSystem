@@ -1,7 +1,7 @@
 -----AddressBookSystem-----
-----------------------------------------------
+-----------------------------------------------------------------
 UC - 1 Create a Address Book Service database
-----------------------------------------------
+-----------------------------------------------------------------
 
 mysql> create database AddressBookService;
 Query OK, 1 row affected (0.01 sec)
@@ -23,7 +23,7 @@ mysql> use addressbookservice;
 Database changed
 
 -----------------------------------------------------------------
-UC - 2 Create a Address Book Service database
+UC - 2 Create a Address Book Table
 -----------------------------------------------------------------
 mysql> create table AddressBook (
     -> firstName varchar(50) not null,
