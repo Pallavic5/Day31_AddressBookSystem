@@ -50,6 +50,10 @@ mysql> desc Addressbook;
 | email       | varchar(100) | NO   |     | NULL    |       |
 +-------------+--------------+------+-----+---------+-------+
 8 rows in set (0.01 sec)
+
+---------------------------------------------------------------------------------
+	UC - 3 Insert a new contact into Address Book Table
+---------------------------------------------------------------------------------
 mysql> insert into AddressBook (firstname, lastname, address,city, state, zip,phoneNumber,email) values
     -> ('Pallavi', 'Chedge','Nova Apartment','Chennai','TamilNadu', 609865, 7387634500,'pallavic@gmail.com'),
     -> ('Shivani ','Sharma','Datta Apartment','Nagpur','Maharashtra', 609870, 8970764321,'shivani@gmail.com'),
