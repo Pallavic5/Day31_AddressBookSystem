@@ -50,3 +50,23 @@ mysql> desc Addressbook;
 | email       | varchar(100) | NO   |     | NULL    |       |
 +-------------+--------------+------+-----+---------+-------+
 8 rows in set (0.01 sec)
+mysql> insert into AddressBook (firstname, lastname, address,city, state, zip,phoneNumber,email) values
+    -> ('Pallavi', 'Chedge','Nova Apartment','Chennai','TamilNadu', 609865, 7387634500,'pallavic@gmail.com'),
+    -> ('Shivani ','Sharma','Datta Apartment','Nagpur','Maharashtra', 609870, 8970764321,'shivani@gmail.com'),
+    -> ('Rahul ','Punewar','Mahindra City','Chennai','TamilNadu', 675900, 7634200043,'rv@gmail.com'),
+    -> ('Shashwat ','Kumar','Manewada','Nagpur','Maharashtra', 561897, 9999345987,'sp@gmail.com'),
+    -> ('Vrushabh ','Punewar','Nova Apartment','Wardha','Maharashtra', 661310, 9996759999,'vrushabh@gmail.com');
+Query OK, 5 rows affected (0.01 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+mysql> select * from AddressBook;
++-----------+----------+-----------------+---------+-------------+--------+-------------+--------------------+
+| firstName | lastName | address         | city    | state       | zip    | phoneNumber | email              |
++-----------+----------+-----------------+---------+-------------+--------+-------------+--------------------+
+| Pallavi   | Chedge   | Nova Apartment  | Chennai | TamilNadu   | 609865 |  7387634500 | pallavic@gmail.com |
+| Shivani   | Sharma   | Datta Apartment | Nagpur  | Maharashtra | 609870 |  8970764321 | shivani@gmail.com  |
+| Rahul     | Punewar  | Mahindra City   | Chennai | TamilNadu   | 675900 |  7634200043 | rv@gmail.com       |
+| Shashwat  | Kumar    | Manewada        | Nagpur  | Maharashtra | 561897 |  9999345987 | sp@gmail.com       |
+| Vrushabh  | Punewar  | Nova Apartment  | Wardha  | Maharashtra | 661310 |  9996759999 | vrushabh@gmail.com |
++-----------+----------+-----------------+---------+-------------+--------+-------------+--------------------+
+5 rows in set (0.00 sec)
