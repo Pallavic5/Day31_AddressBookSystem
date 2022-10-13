@@ -74,3 +74,21 @@ mysql> select * from AddressBook;
 | Vrushabh  | Punewar  | Nova Apartment  | Wardha  | Maharashtra | 661310 |  9996759999 | vrushabh@gmail.com |
 +-----------+----------+-----------------+---------+-------------+--------+-------------+--------------------+
 5 rows in set (0.00 sec)
+
+-------------------------------------------------------------------------------------
+  UC - 4 Ability to edit existing contact person using their name
+--------------------------------------------------------------------------------------
+update addressbook set phoneNumber=9021223455 where firstname='Pallavi';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from AddressBook;
++-----------+----------+-----------------+---------+-------------+--------+-------------+--------------------+
+| firstName | lastName | address         | city    | state       | zip    | phoneNumber | email              |
++-----------+----------+-----------------+---------+-------------+--------+-------------+--------------------+
+| Pallavi   | Chedge   | Nova Apartment  | Chennai | TamilNadu   | 609865 |  9021223455 | pallavic@gmail.com |
+| Shivani   | Sharma   | Datta Apartment | Nagpur  | Maharashtra | 609870 |  8970764321 | shivani@gmail.com  |
+| Rahul     | Punewar  | Mahindra City   | Chennai | TamilNadu   | 675900 |  7634200043 | rv@gmail.com       |
+| Shashwat  | Kumar    | Manewada        | Nagpur  | Maharashtra | 561897 |  9999345987 | sp@gmail.com       |
+| Vrushabh  | Punewar  | Nova Apartment  | Wardha  | Maharashtra | 661310 |  9996759999 | vrushabh@gmail.com |
++-----------+----------+-----------------+---------+-------------+--------+-------------+--------------------+
